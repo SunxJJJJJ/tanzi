@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<scroll-view scroll-y = true >
+
+
+<swiper class="swiper " indicatorDots="true"  autoplay="true">
+	<!-- duration是动画播放时间  interval是自动播放时间-->
+	<block wx:for="{{myimg}}" wx:for-index="index" wx:key="{{this}}">
+		<!-- wx:key="*this"， 保留关键字 *this 代表在 for 循环中的 item 本身，这种表示需要 item 本身是一个唯一的字符串或者数字，如：
+当数据改变触发渲染层重新渲染的时候，会校正带有 key 的组件，框架会确保他们被重新排序，而不是重新创建，以确保使组
+件保持自身的状态，并且提高列表渲染时的效率。 -->
+		<swiper-item>
+			<!-- 第一张照片 -->
+			<image class="slide-image" src="{{item.url}}" alt="" mode="aspectFill" />
+		</swiper-item>
+	
+	</block>
+
+</swiper>
+<view class="container" >
+	<view class="productCard">
+		<navigator class="product1" url="/newindex/xin?title=navigate" hover-class="navigator-hover"><image src="../../images/A1.jpg"></image>国外游</navigator>
+			<navigator class="product2" url="/newindex/xin?title=navigate"hover-class="navigator-hover"><image src="../../images/A2.jpg"></image>  国内游</navigator>
+			<navigator class="product3" url="/newindex/xin?title=navigate" hover-class="navigator-hover"><image src="../../images/A3.jpg"></image> 省内游</navigator>
+			<navigator class="product4" url="/newindex/xin" hover-class="navigator-hover"><image src="../../images/A4.jpg"></image> 周边游</navigator>
+			
+	</view>
+	
+<!-- 	wx:for-item=‘变量名（随便起的）’   它是指定循环数据当前的变量名，可以通过  {{变量名.属性}} 展示数组的元素。
+wx:for-index=‘变量名（随便起）’，它是指向当前元素的下标名，可以在其他事件中定义自定义事件（data-xxx='{{变量名}}'，，该自定义属性可以在参数e下面打印出来）获取该下标。 -->
+<!--  wx:for-index="mainListViewDataIndex" ： 定义索引值的名称 mainListViewDataIndex
+wx:for-item="mainListViewDataItem" ： 定义索引值对应项名称 mainListViewDataItem -->
+
+	
+	<view class="list">
+		<block wx:for="{{datalist}}" wx:key="{{list}}" wx:for-item="item">
+		<view class="list_item">
+			
+			<navigate class="navigate_tow" url="">
+				<view class="img">
+					<image src="{{item.url}}" mode="scaleToFill"></image>
+				</view>
+				<view class="info">
+					<view class="title">{{item.goods_title}}</view>		<!-- 标题 -->
+					<view class="price">价格:{{item.goods_price}}</view>		<!-- 价格 -->
+					<view class="num">销量:{{item.goods_num}}</view>			<!-- 销量 -->
+				</view>
+			</navigate>
+			<view class="clear"></view>
+			
+		</view>
+		</block>
+	</view>
+	
+
+	
+	
+</view>
+</scroll-view>

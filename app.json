@@ -1,0 +1,103 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+	  "newindex/new",
+    "pages/tabbarone/hotel",
+    "pages/tabbartow/transport",
+    "pages/tabbarthree/me",
+    "newindex/xin"
+    
+    
+    
+	
+  ],
+  
+  "subpackages":[
+    {
+      "root":"packageA",
+      "pages":[
+        "pages/fenbao/fenbao"
+      ]
+      
+    }
+  ],
+
+
+  
+  
+   "permission": {
+
+"scope.userLocation": {
+
+"desc": "我们将保护您的信息安全。"
+    }
+  },
+
+ 
+  "window": {
+  
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#7785f3",
+    "navigationBarTitleText": "探子旅游",
+    "navigationBarTextStyle": "black",
+    
+    "enablePullDownRefresh": true ,
+    "onReachBottomDistance": 50
+    
+  },
+  "sitemapLocation": "sitemap.json",
+
+
+
+   
+  "tabBar": {
+    "color": "gray",
+    "selectedColor": "blue",
+    "list": [{
+      
+      "pagePath": "pages/index/index", 
+     
+      "text": "首页",
+      "iconPath": "images/index.png"
+     
+    },
+    {
+      "pagePath": "pages/tabbarone/hotel",
+      "text": "酒店",
+      "iconPath": "images/hotel.png"
+     
+    },
+    {
+      "pagePath": "pages/tabbartow/transport",
+      "text": "出行",
+      "iconPath": "images/transport.png"
+      
+    },
+    {
+      "pagePath": "pages/tabbarthree/me",
+      "text": "个人中心",
+      "iconPath": "images/me.png"
+      
+    }
+    
+    ]
+  }
+  ,
+  
+    "openId": "OPENID",
+    "nickName": "NICKNAME",
+    "gender": "GENDER",
+    "city": "CITY",
+    "province": "PROVINCE",
+    "country": "COUNTRY",
+    "avatarUrl": "AVATARURL",
+    "unionId": "UNIONID",
+    "watermark": {
+      "appid": "APPID",
+      "timestamp":"TIMESTAMP"
+    
+  }
+
+ 
+}

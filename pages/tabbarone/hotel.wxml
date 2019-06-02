@@ -1,0 +1,163 @@
+<!--pages/tabbaronw/tabbarone.wxml-->
+
+<swiper class="swiper1 " indicatorDots="true"  autoplay="true">
+	<!-- duration是动画播放时间  interval是自动播放时间-->
+	<block wx:for="{{myimg}}" wx:for-index="index" wx:key="{{this}}">
+		<!-- wx:key="*this"， 保留关键字 *this 代表在 for 循环中的 item 本身，这种表示需要 item 本身是一个唯一的字符串或者数字，如：
+当数据改变触发渲染层重新渲染的时候，会校正带有 key 的组件，框架会确保他们被重新排序，而不是重新创建，以确保使组
+件保持自身的状态，并且提高列表渲染时的效率。 -->
+		<swiper-item>
+			<!-- 第一张照片 -->
+			<image class="slide-image" src="{{item.url}}" alt="" mode="aspectFill" />
+		</swiper-item>
+    	</block>
+
+</swiper>
+
+<view class='container'>
+  <!--Tab布局-->
+  <view class='title'>
+  <!-- view(tab)一个data-idx索引，根据当前index来改变tab的状态并决定swiper显示那个内容，改变swiper的内容只需要改变swiper的current就好 -->
+    <view class="titleSel" bindtap='titleClick' data-idx='0'>
+      <text style='color:#E64240;font-size:40rpx;'>酒店</text>
+      <hr class="{{0 == currentIndex ? 'headerLineSel' : 'headerLineUnsel'}}" />
+    </view>
+    
+    <view class='titleSel' bindtap='titleClick' data-idx='1'>
+      <text style='color:#E64240;font-size:40rpx;'>交通</text>
+      <hr class="{{1 == currentIndex ? 'headerLineSel' : 'headerLineUnsel'}} " />
+    </view>
+  </view>
+
+<!--内容布局-->
+  <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+    <swiper-item class='swiper'>
+     
+
+
+      <form>
+
+  <view class="section section_gap kaung">
+  <view class='div1'><text>目的地</text></view>
+ <view class='div2'>
+       <input  class='m-bbt' placeholder-class='plhStyle' type='number' maxlength='50' placeholder='' bindinput="bindKeyInput" value='{{province}} {{city}}'     id='ggg'       ></input>  
+ </view> <!--可加 disabled 禁用 -->
+   <view class='div3'><text>当前位置</text></view>
+
+    <!-- <view class="section__title">switch</view>
+    <switch name="switch" /> -->
+  </view>
+    
+  <view class="section section_gap"style='border-bottom: 1px solid rgba(156, 151, 151, 0.801);margin-bottom: 40rpx;padding-bottom:10rpx;'>
+    <view class="section__title1"style="padding-left:20rpx;font-weight:bold;display:inline-block">价格</view>
+    <slider class='slider1' name="slider" min="99" max="500" show-value step='25' ></slider>
+  </view>
+
+   <view class="section kaung">
+  <view class='div1'> <text>搜索</text></view>
+ <view class='div4'><input class='input_xs' placeholder="格林豪泰"  /></view>
+    
+  </view>
+
+<view class="section section_gap kaung2 ">
+
+  <view class='div1'><text>出行方式</text></view>
+
+  <view class='div6'> <text  class="section__title">休闲</text>
+    <switch name="switch" /> </view>
+
+    <view class='div6'> <text  class="section__title">出差</text>
+    <switch name="switch" /> </view>
+  
+  </view>
+  <!-- <view class='section section_gap kaung3'>
+  <button type='warn' bindtap="setDisabled">查找酒店</button>
+  </view> -->
+
+  <navigator class="kaung3" url="/newindex/new?title=navigate" hover-class="navigator-hover">查找酒店</navigator>
+
+ 
+</form>
+
+
+
+
+    </swiper-item>
+    <swiper-item class='swiper' class='swiper'>
+      
+      
+
+<!-- 交通 -->
+
+
+  <view class="jiaotong">
+  <!-- 地址 -->
+        <view class="chengs1"> <text style='font-size:20rpx;color:gary; '>出发城市</text>
+  <picker mode="region" bindchange="bindRegionChange1" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+    {{region[1]}}
+    </view>
+  </picker>
+  </view>
+  <view class='icon'><image src='../../images/jiaot.png'></image></view>
+
+  <view class="chengs2"> <text style='font-size:20rpx;color:gary; '>到达城市</text>
+  <input placeholder='输入目的地'></input>
+  <!-- <picker mode="region" bindchange="bindRegionChanges" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+    {{region[1]}}
+    </view>
+  </picker> -->
+  </view>
+
+
+
+  </view>
+    
+  
+
+   <view class='shijian'>
+   <view class='riqi'>
+  <picker mode="date" value="{{date}}" start="2019-01-01" end="2020-12-31" bindchange="bindDateChange">
+    <view class="picker">
+      {{date}}
+    </view>
+  </picker>
+</view>
+</view>
+
+
+
+<view class="section section_gap kaung2 ">
+
+  <view class='div6'> <text  class="section__title">机票</text>
+    <switch name="switch" /> </view>
+
+    <view class='div6'> <text  class="section__title">火车票</text>
+    <switch name="switch" /> </view>
+
+     <view class='div6'> <text  class="section__title">船票</text>
+    <switch name="switch" /> </view>
+
+    <view class='div6'> <text  class="section__title">大巴</text>
+    <switch name="switch" /> </view>
+  
+  </view>
+  
+
+  <navigator class="kaung3" url="/newindex/new?title=navigate" hover-class="navigator-hover">马上订票</navigator>
+
+ 
+
+      
+
+
+    </swiper-item>
+  </swiper>
+
+
+  
+
+  </view>
+
+

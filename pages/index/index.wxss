@@ -1,0 +1,129 @@
+/**index.wxss**/
+
+.swiper{
+	height: 350rpx;
+	
+	
+}
+.swiper image{
+	width: 100%;
+	height: 100%;
+}
+navigator{
+	color:rgb(112, 107, 107);
+  text-align: center;
+  margin-bottom: 20rpx;
+  
+}
+/* navigator:nth-child(3){
+  border-bottom: 1px solid  #E8E8E8;
+}
+navigator:nth-child(4){
+  border-bottom: 1px solid  #E8E8E8;
+} */
+.productCard{
+	margin-top: 20rpx;
+  margin-bottom: 40rpx;
+	width: 100%;
+	/* border: 1px solid black; */
+	display: inline-block;
+}
+
+.product1 image,.product2 image, .product3 image,.product4 image{
+	width: 100%;
+	height: 100%;
+  border-radius: 10rpx;
+}
+
+
+
+/* .product1{
+	background-image:"url(../../images/A1.jpg)";
+}
+.product2{
+	background-image:"url(../../images/A2.jpg)";
+}
+.product3{
+	background-image:"url(../../images/A3.jpg)";
+}
+.product4{
+	background-image:"url(../../images/A4.jpg)";	
+} */
+.product1,.product2,.product3, .product4{
+  width: 45%;
+	text-align:content;
+  /* padding: 50rpx 0rpx; */
+	 height: 200rpx;
+	display: inline-block;
+	margin: 0rpx 0rpx 20rpx 3.3% ;
+	
+  border-radius: 10rpx;
+}
+
+.clear{
+  clear: both;
+  overflow: hidden;
+}
+.navigate_tow{
+  display:inline;
+}
+.list{
+   margin-top:-30rpx; 
+  width: 100%;
+}
+ 
+.list .list_item{
+  margin-top:10px;
+  padding:10px;
+	width: 100%;
+  height:110px;
+ border-bottom:1px solid #E8E8E8;
+}
+.list .list_item .img{
+  float:left;
+  width:45%;
+  height:100%;
+}
+.list .list_item .img image{
+   width:100%;
+   height:100%;
+   border-radius: 15rpx;
+}
+ 
+.list .list_item .info{
+  width:54%;
+  float:right;
+  height:100px;
+  position:relative;
+	
+	
+}
+.list .list_item .info .title{
+  color:#333;
+  margin-left:10px;
+  font-size: 15px;
+	font-weight: bold;
+	height:38%;
+	/* 这是解决多行文本溢出显示省略号 */
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+
+}
+ 
+.list .list_item .info .price{
+  color:#FF2727;
+  margin-left:10px;
+  margin-top:15px;
+  font-size:15px;
+}
+ 
+.list .list_item .info .num{
+  position: absolute;
+  left:0px;
+  bottom:0px;
+  color:#747474;
+  margin-left:10px;
+  font-size:15px;
+}

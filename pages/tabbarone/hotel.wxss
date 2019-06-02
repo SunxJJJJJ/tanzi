@@ -1,0 +1,229 @@
+/* pages/tabbaronw/tabbarone.wxss */
+
+.swiper1{
+	height: 220rpx;
+ 
+}
+.swiper1 image{
+	width: 100%;
+	height: 100%;
+}
+
+
+.container{
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;/*布局方向 为 列*/
+  box-sizing: border-box;
+  /* background-image:url("http://up.enterdesk.com/edpic/3c/28/c9/3c28c99232da6c23a3c9c631db3eab59.jpg");
+  background-size: 100% 100%; */
+}
+
+.title{
+  width: 100%;
+  height: 88rpx;
+  
+  display: flex;
+  background-color:#FBF9FE;
+  align-items: center;/*居中对齐弹性盒的各项 <div> 元素： */
+ justify-content: space-around; /* 在弹性盒对象的 <view> 元素中的各项周围留有空白： */
+
+}
+
+
+
+
+.titleSel{
+  color: rgb(10, 0, 10);
+  font-size: 32rpx;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column; /*布局方向 为 列*/
+ align-items: center;
+}
+/* .titleSel text{
+  background-color: #E64240;
+  padding: 10rpx 20rpx;
+  border-radius: 10rpx;
+} */
+.titleUnsel{
+  color: powderblue;
+  font-size: 32rpx;
+}
+.headerLinesel{
+  background:rgb(255, 255, 255);
+  height: 6rpx;
+  width: 40rpx;
+  position: relative;
+  margin-top: 10rpx;
+
+}
+.headerLineUnsel{
+  background:rgb(211, 58, 58);
+  height: 4rpx;
+  width: 120rpx;
+  position: relative;
+  margin-top: 10rpx;
+}
+
+.swiper{
+  width: 80%;
+  flex: 1;
+  height: 63vh; /*超出规定 高度 就有滚动效果*/
+  overflow: scroll;/*超出规定 高度 就有滚动效果*/
+   
+  margin-bottom: 20rpx;
+  margin-top: 10rpx;
+  
+}
+swiper{
+  /* border: 1px solid rgb(75, 72, 72);  */
+  border-radius: 10rpx;
+}
+.recordItem{
+  margin-top: 10rpx;
+  background-color: rgb(202, 128, 177);
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+
+}
+form{
+  /* border: 1px solid green; */
+  width: 90%;
+
+}
+.kaung{
+  width: 100%;
+  height: 70rpx;
+  border-bottom: 1px solid rgba(156, 151, 151, 0.801);
+  margin-bottom: 10rpx;
+  padding-bottom: 20rpx;
+  
+}
+.kaung2{
+   width: 100%;
+  border-bottom: 1px solid rgba(156, 151, 151, 0.801);
+  margin-bottom: 10rpx;
+  padding-bottom: 15rpx;
+}
+.kaung3{
+  width: 70%;
+  margin: 0rpx auto;
+  margin-top: 40rpx;
+  background-color: #E64240;
+  padding: 30rpx 0rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  color: white;
+}
+.kaung4{
+   width: 100%;
+  border-bottom: 1px solid rgba(156, 151, 151, 0.801);
+  margin-bottom: 10rpx;
+  padding-bottom: 15rpx;
+}
+.div1{
+  width: 24%;
+  color:gray;
+  font-size: 30rpx;
+ padding-left: 20rpx;
+  display: inline-block;
+ 
+}
+.div2{
+width: 46%;
+font-size: 35rpx;
+font-display: 10rpx;
+display: inline-block;
+font-weight: bold;
+
+
+}
+
+.div3{
+   width: 24%;   
+  color: gray;
+  font-size: 30rpx; 
+  display: inline-block;
+  padding-left: 10rpx;
+
+}
+.section__title1{
+  display: inline-block;
+  width: 15%;
+   color: gray;
+  line-height: 50px;
+}
+.slider1{
+ width:65%;
+ display: inline-block
+
+}
+.div4{
+  width: 72%;
+font-size: 35rpx;
+font-display: 10rpx;
+display: inline-block;
+font-weight: bold;
+}
+.div5{
+  width: 24%;
+  color:gray;
+  font-size: 30rpx;
+ padding-left: 20rpx;
+  display: inline-block;
+}
+.div6{
+   width: 25%;   
+  color: black;
+  font-size: 30rpx; 
+  display: inline-block;
+  margin:20rpx auto 20rpx auto;
+  text-align: center;
+}
+.jiaotong{
+   border-bottom: 1px solid gray;
+  height: 100rpx;
+  width: 100%;
+  padding-bottom: 20rpx;
+  
+}
+.chengs1{
+  width: 38%;
+  margin-left: 20rpx;
+  display: inline-block;
+   
+}
+.icon{
+  width: 15%;
+  height: 100rpx;
+  display: inline-block;
+  
+   
+}
+.icon image{
+width: 70%;
+height: 70%;
+padding-left: 15rpx;
+}
+.chengs2{
+  width: 38%;
+  margin-right: 20rpx;
+  display: inline-block;
+   
+   text-align: right
+}
+.shijian{
+   
+   border-bottom: 1px solid gray;  
+
+}
+.riqi{
+
+margin-left: 20rpx;
+   padding: 30rpx 0rpx;
+}
+
+
+

@@ -1,0 +1,6 @@
+.mysearch{
+  margin: 20rpx auto;
+}
+.mysearch input{
+  border: 1px solid black;
+}

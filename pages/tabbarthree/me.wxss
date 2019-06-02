@@ -1,0 +1,96 @@
+/* pages/tabbarthree/me.wxss */
+/* .mytext{
+  width: 250px;
+  height: 100px;
+  margin: auto;
+} */
+.header{
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  text-align: center;
+  background-color:#7785f3; 
+  
+}
+.header text{
+  display: block;
+  padding-top: 60rpx;
+  color: white;
+  font-size: 24rpx;
+  
+
+}
+.login{
+  width: 30%;
+  
+  background-color: rgb(216, 87, 87);
+  padding: 15rpx 40rpx;
+  margin: 40rpx auto 50rpx auto;
+  border-radius: 20rpx;
+  color: white;
+
+}
+.body{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(243, 241, 241);
+}
+.shangdiv{
+  width: 90%;
+  
+  background-color: white;
+  margin: 0rpx auto;
+  border-radius: 15rpx
+}
+.san{
+  width: 20%;
+  height: 75px;
+  
+  font-size: 30rpx;
+  display: inline-block;
+  margin:  30rpx 6.3%;
+  text-align:center;
+}
+.san image{
+  width: 50%;
+  height: 50%;
+  display: block;
+  padding: auto;
+  
+  margin:0rpx  auto 20rpx auto;
+  
+}
+.xiadiv{
+  width: 90%;
+  margin: 50rpx auto 70rpx auto;
+  background-color: white;
+  border-radius: 15rpx;
+  color:black
+  
+}
+.list , list_item{
+  width: 100%;
+  
+
+}
+.li{
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid rgb(233, 229, 229) ;
+  
+}
+ .li .li_text{
+  font-size: 35rpx;
+  color: black;
+  padding: 30rpx 0rpx 30rpx 6.2%;
+  display: inline-block
+}
+
+.li .li_icon{
+  display: inline-block;
+ position: absolute;
+ right: 4%;
+ bottom:20%;
+ color: gray;
+
+} 

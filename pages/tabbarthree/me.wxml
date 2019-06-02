@@ -1,0 +1,61 @@
+<!--pages/tabbarthree/me.wxml-->
+<view  class='mytext'>
+
+  <view class='header'>
+    <text>登录探子，探索世界</text>
+    <view  class='login' bindtap='login'>登录/注册</view >
+  </view>
+
+  <view class='body'>
+
+  <!-- 上div -->
+    <view class='shangdiv'>
+      <view class='san'><image src='../../images/s1.png'></image><text>全部订单</text></view>
+      <view class='san'><image src='../../images/s2.png'></image><text>待付款</text></view>
+      <view class='san'><image src='../../images/s3.png'></image><text>退款</text></view>
+      </view>
+
+    <!-- 下div -->
+
+  <view class='xiadiv'>
+    <view class='list'>
+     <!-- <block  wx:for="{{datalist}}" wx:for-item="item" wx:key="{{list}}"  > -->
+      <view class='list_item'>
+        <view class='li' bindtap='youhuiq'>
+          <view class='li_text'>优惠券</view>
+          <view class='li_icon'>></view>
+        </view>
+
+        <view  class='li'  bindtap='saoyisao'>
+          <view class='li_text'>扫一扫</view>
+          <view class='li_icon'>></view>
+       </view>
+
+        <view  class='li' bindtap='qiandao'>
+          <view class='li_text'>签到</view>
+          <view class='li_icon'>></view>
+        </view>
+ 
+        <navigator  class='li'>
+           <view class='li_text'>收藏</view>
+          <view class='li_icon'>></view>
+        </navigator>
+
+        <navigator  class='li'>
+        <view class='li_text'>设置</view>
+          <view class='li_icon'>></view>
+        </navigator>
+      </view>
+      
+      <!-- </block>  -->
+    </view>
+  </view>
+
+
+
+  </view>
+
+  <view class='footer'>
+    <view class=''></view>
+  </view>
+</view>

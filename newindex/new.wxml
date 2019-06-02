@@ -1,0 +1,35 @@
+
+
+<view style='text-align:center;color:gray'>由腾讯地图 MapSdk 技术支持</view> 
+<map id="myMap"
+   markers="{{markers}}"
+   style="width:100%;height:300px;"
+   longitude="116.140738"
+   latitude="23.28786" scale='16'>
+</map>
+
+<!--  <view class='mysearch'>
+  <input bindinput='nearby_search' placeholder='搜索周边' name="myword"></input>
+  绑定点击事件
+  <button bindtap="nearby_search">搜索</button>
+</view> 
+
+
+
+<!--绑定输入事件-->
+<view style='width:100% ;background-color:#7785f3;border:1px solid black'>
+<view style='margin:30rpx auto; width:70%;'>
+<input style='border:1px solid; background-color:white;  border-radius:50rpx' placeholder='搜索' bindinput="getsuggest" value="{{backfill}}">格林豪泰</input>
+</view>
+</view>
+<!--关键词输入提示列表渲染-->
+<view wx:for="{{suggestion}}" wx:key="index">
+    <!--绑定回填事件-->
+    <view>
+    <!--根据需求渲染相应数据-->
+    <!--渲染地址title-->
+    <view style="text-align:center;" bindtap="backfill" id="{{index}}">{{item.title}}</view>
+    <!--渲染详细地址-->
+    <view style="font-size:12px;color:#666;text-align:center;">{{item.addr}}</view>
+    </view>
+</view>
